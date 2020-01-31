@@ -38,6 +38,7 @@ call plug#begin()
     Plug 'fcpg/vim-orbital'
     Plug 'junegunn/seoul256.vim'
     Plug 'arcticicestudio/nord-vim'
+
 call plug#end()
 
 
