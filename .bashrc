@@ -86,7 +86,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias enterdays='enterdays.py'
     alias poweroff='poweroff.py'
     alias addtweet='addtweets.py'
-    alias kankyo='kankyo.sh'
+    alias envcreate='envcreate.sh'
 
 fi
 
