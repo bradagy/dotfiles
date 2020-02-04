@@ -5,7 +5,7 @@
 - [better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
 - [devicons](https://github.com/ryanoasis/vim-devicons)
 - [emmet](https://https://github.com/mattn/emmet-vim)
-- [fahrenheiht](https://github.com/fcpg/vim-fahrenheit)
+- [farout](https://github.com/fcpg/vim-farout)
 - [fzf](https://github.com/junegunn/fzf.vim)
 - [gitbranch - for lightline](https://github.com/itchyny/vim-gitbranch)
 - [goyo](https://github.com/junegunn/goyo.vim)
