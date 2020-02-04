@@ -37,6 +37,7 @@ call plug#begin()
 
     " Colors
     Plug 'fcpg/vim-orbital'
+    Plug 'fcpg/vim-fahrenheit'
     Plug 'junegunn/seoul256.vim'
     Plug 'arcticicestudio/nord-vim'
 
@@ -56,6 +57,7 @@ set fileformat=unix                 " For unix text files. Convert to 'Dos' for 
 set encoding=UTF-8                  " Force UTF-8 encoding.
 set cursorcolumn                    " Highlight the current column.
 set cursorline                      " Focus on current line i'm working on.
+set textwidth=80                    " Lines can only be 80 characters long.
 set splitbelow                      " Open new panes to the right and bottom.
 set splitright
 set background=dark                 " Vim uses colors that would look the best on a dark background.
@@ -217,6 +219,9 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Set the NERDTree window size to 30.
 let g:nerdtreewinsize=30
+
+" Close Vim if the only window open is NERDTree.
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 
 " ===================NORD=============================
