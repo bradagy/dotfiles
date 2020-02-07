@@ -1,4 +1,3 @@
-
 " Use Vim settings, rather then Vi settings
 " This must be first because it changes other options as a side effect.
 set nocompatible
@@ -186,8 +185,10 @@ let g:fzf_colors =
 " ===================LIGHTLINE===================
 set laststatus=2                    " Allowing the Lightline status bar to become visible.
 
-" Allowing git branch information to be shown in the Lightline status bar.
+" Adding colorscheme to lightline and allowing git branch information to be
+" shown.
 let g:lightline = {
+      \ 'colorscheme': 'nord',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
