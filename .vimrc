@@ -120,6 +120,13 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" These keys (^ and $) still provide the same functions, but it will make it easier
+" to move around by remapping them.
+nnoremap B ^
+nnoremap E $
+
+
+
 " Change leader shortcut to comma instead of backslash.
 let mapleader=","
 
