@@ -14,7 +14,6 @@
 - [limelight](https://github.com/junegunn/limelight.vim)
 - [NERDTree](https://github.com/preservim/nerdtree)
 - [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
-- [vimwiki](https://github.com/vimwiki/vimwiki)
 
 ## Colors
 - [farout](https://github.com/fcpg/vim-farout)

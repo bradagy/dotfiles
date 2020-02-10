@@ -32,7 +32,6 @@ call plug#begin()
 
     " Miscellaneous
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
-    Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 
     " Colors
     Plug 'fcpg/vim-orbital'
@@ -245,14 +244,3 @@ let g:nord_bold_vertical_split_line = 1
 let g:nord_italic = 1
 " Enabling italic comments while using the Nord colorscheme.
 let g:nord_italic_comments = 1
-
-" ==================VimWiki===========================
-" Set path to directory inside dropbox.
-let g:vimwiki_list = [{'path': '$HOME/Dropbox/vimwiki/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
-
-" Make sure VimWiki doesn't own all of the .md files.
-let g:vimwiki_global_ext = 0
-
-" Turning VimWiki page links into link extensions.
-let g:vimwiki_markdown_link_ext = 1
