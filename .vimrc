@@ -35,8 +35,6 @@ call plug#begin()
 
     " Colors
     Plug 'fcpg/vim-orbital'
-    Plug 'fcpg/vim-farout'
-    Plug 'junegunn/seoul256.vim'
     Plug 'arcticicestudio/nord-vim'
 
 call plug#end()

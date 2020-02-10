@@ -16,9 +16,7 @@
 - [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
 
 ## Colors
-- [farout](https://github.com/fcpg/vim-farout)
 - [orbital](https://github.com/fcpg/vim-orbital)
-- [seoul256](https://github.com/junegunn/seoul256.vim)
 - [nord](https://github.com/arcticicestudio/nord-vim)
 
 ## Terminal Multiplexer
