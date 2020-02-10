@@ -1,3 +1,14 @@
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+"                                                                              "
+"                       __   _ _ _ __ ___  _ __ ___                            "
+"                       \ \ / / | '_ ` _ \| '__/ __|                           "
+"                        \ V /| | | | | | | | | (__                            "
+"                         \_/ |_|_| |_| |_|_|  \___|                           "
+"                                                                              "
+"                                                                              "
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+
+
 " Use Vim settings, rather then Vi settings
 " This must be first because it changes other options as a side effect.
 set nocompatible
@@ -50,19 +61,22 @@ filetype plugin indent on
 set number relativenumber           " Hybrid numbers (set number & set relativenumber)
 set t_Co=256                        " Tell Vim to accept 256 colors.
 set fileformat=unix                 " For unix text files. Convert to 'Dos' for Windows.
-set encoding=UTF-8                  " Force UTF-8 encoding.
+set encoding=utf-8                  " Force UTF-8 encoding.
 set cursorcolumn                    " Highlight the current column.
 set cursorline                      " Focus on current line i'm working on.
 set textwidth=80                    " Lines can only be 80 characters long.
 set splitbelow                      " Open new panes to the right and bottom.
 set splitright
+set lazyredraw                      " Don't redraw while executing macros (helps performance).
+set wildmode=longest,list,full      " Bash-like completion for file names.
+set wildmenu
 set background=dark                 " Vim uses colors that would look the best on a dark background.
 set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
 syntax enable                       " Enable syntax processing.
 colorscheme nord                    " Setting colorscheme to nord.
 
-" Italic comments.
+" Italic comments (when default vim colorscheme is in play).
 highlight Comment cterm=italic gui=italic
 " Syntax highlighting for Python files.
 let python_highlight_all = 1
@@ -89,12 +103,13 @@ set t_vb=                           " Disable flashing que.
 
 
 " ==================UI SETTINGS========================
-set ruler                           " Always show the cursor position.
+set ruler                           " Show current line number at the bottom.
 set showmode                        " Show the mode I'm currently in.
 set showmatch                       " Shows matching pair of brackets (), [], {}.
 set visualbell                      " No sounds.
 set noerrorbells                    " Disable error bells.
 set t_vb=                           " Disable flashing que.
+set title                           " Show file in title bar.
 
 
 " ===================REMAPPINGS======================
