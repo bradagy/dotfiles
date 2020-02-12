@@ -4,7 +4,6 @@
 - [ale](https://github.com/dense-analysis/ale)
 - [better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
 - [devicons](https://github.com/ryanoasis/vim-devicons)
-- [emmet](https://https://github.com/mattn/emmet-vim)
 - [fzf](https://github.com/junegunn/fzf.vim)
 - [gitbranch - for lightline](https://github.com/itchyny/vim-gitbranch)
 - [goyo](https://github.com/junegunn/goyo.vim)

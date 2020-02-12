@@ -31,7 +31,6 @@ call plug#begin()
     Plug 'itchyny/lightline.vim'
     Plug 'itchyny/vim-gitbranch'
     Plug 'ntpeters/vim-better-whitespace'
-    Plug 'mattn/emmet-vim'
 
     " Browsing
     Plug 'scrooloose/nerdtree'
@@ -97,9 +96,6 @@ set softtabstop=4                   " Number of spaces inserted when <TAB> is pr
 set tabstop=4                       " Number of visual spaces per <TAB>.
 set expandtab                       " Convert tabs to spaces. AKA <TAB> means 'insert four spaces.'
 set nowrap                          " Do not wrap lines.
-set visualbell                      " No sounds.
-set noerrorbells                    " Disable error bells.
-set t_vb=                           " Disable flashing que.
 
 
 " ==================UI SETTINGS========================
@@ -109,7 +105,7 @@ set showmatch                       " Shows matching pair of brackets (), [], {}
 set visualbell                      " No sounds.
 set noerrorbells                    " Disable error bells.
 set t_vb=                           " Disable flashing que.
-set title                           " Show file in title bar.
+set title                           " Shows the current file path at the top of the window.
 
 
 " ===================REMAPPINGS======================
