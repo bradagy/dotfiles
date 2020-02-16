@@ -10,11 +10,11 @@
 - [gitbranch - for lightline](https://github.com/itchyny/vim-gitbranch)
 - [goyo](https://github.com/junegunn/goyo.vim)
 - [indentLine](https://github.com/Yggdroot/indentLine)
-- [indentPython](https://github.com/vim-scripts/indentpython.vim)
 - [lightline](https://github.com/itchyny/lightline.vim)
 - [limelight](https://github.com/junegunn/limelight.vim)
 - [NERDTree](https://github.com/preservim/nerdtree)
 - [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
+- [pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent)
 - [startify](https://github.com/Plug/mhinz/vim-startify)
 
 
