@@ -38,7 +38,7 @@ call plug#begin()
     Plug 'itchyny/vim-gitbranch'
     Plug 'ntpeters/vim-better-whitespace'
     Plug 'mattn/emmet-vim'
-    Plug 'kien/rainbow_parentheses.vim'
+    Plug 'luochen1990/rainbow'
 
     " Language Specific
     Plug 'sheerun/vim-polyglot'
@@ -261,4 +261,4 @@ let g:nord_italic_comments = 1
 
 
 " ==================RAINBOW PARENTHESES==============
-
+let g:rainbow_active = 1
