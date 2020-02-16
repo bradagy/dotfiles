@@ -41,6 +41,9 @@ call plug#begin()
     Plug 'luochen1990/rainbow'
 
     " Language Specific
+    Plug 'Vimjas/vim-python-pep8-indent'
+    Plug 'lepture/vim-jinja'
+    Plug 'mitsuhiko/vim-python-combined'
 
     " Color-schemes
     Plug 'fcpg/vim-orbital'

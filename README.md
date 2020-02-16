@@ -10,11 +10,14 @@
 - [gitbranch - for lightline](https://github.com/itchyny/vim-gitbranch)
 - [goyo](https://github.com/junegunn/goyo.vim)
 - [indentLine](https://github.com/Yggdroot/indentLine)
+- [jinja](https://github.com/lepture/vim-jinja)
 - [lightline](https://github.com/itchyny/lightline.vim)
 - [limelight](https://github.com/junegunn/limelight.vim)
 - [NERDTree](https://github.com/preservim/nerdtree)
 - [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
-- [rainbow](https://github.com/luochen1990/rainbow)
+- [python-combined](https://github.com/mitsuhiko/vim-python-combined')
+- [pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent)
+- [rainbow-parentheses](https://github.com/luochen1990/rainbow)
 - [startify](https://github.com/Plug/mhinz/vim-startify)
 
 
