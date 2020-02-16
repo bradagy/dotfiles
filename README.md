@@ -14,7 +14,6 @@
 - [limelight](https://github.com/junegunn/limelight.vim)
 - [NERDTree](https://github.com/preservim/nerdtree)
 - [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
-- [polyglot](https://github.com/sheerun/vim-polyglot)
 - [rainbow](https://github.com/luochen1990/rainbow)
 - [startify](https://github.com/Plug/mhinz/vim-startify)
 
