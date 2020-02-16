@@ -3,6 +3,7 @@
 ## Plugins
 - [ale](https://github.com/dense-analysis/ale)
 - [better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
+- [comfortable-motion](https://github.com/Plug/yuttie/comfortable-motion.vim)
 - [devicons](https://github.com/ryanoasis/vim-devicons)
 - [emmet](https://github.com/mattn/emmet-vim)
 - [fzf](https://github.com/junegunn/fzf.vim)

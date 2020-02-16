@@ -27,8 +27,11 @@ call plug#begin()
     Plug 'scrooloose/nerdtree'
     Plug 'Yggdroot/indentLine'
     Plug 'ryanoasis/vim-devicons'
+    Plug 'yuttie/comfortable-motion.vim'
 
-    " Editing
+    " Miscellaneous
+    Plug 'jeffkreeftmeijer/vim-numbertoggle'
+    Plug 'mhinz/vim-startify'
     Plug 'junegunn/goyo.vim'
     Plug 'junegunn/limelight.vim'
     Plug 'itchyny/lightline.vim'
@@ -36,15 +39,11 @@ call plug#begin()
     Plug 'ntpeters/vim-better-whitespace'
     Plug 'mattn/emmet-vim'
 
-
     " Language Specific
-    Plug 'vim-scripts/indentpython.vim'
+    " Plug 'vim-scripts/indentpython.vim'
+    Plug 'Vimjas/vim-python-pep8-indent'
 
-    " Miscellaneous
-    Plug 'jeffkreeftmeijer/vim-numbertoggle'
-    Plug 'mhinz/vim-startify'
-
-    " Colors
+    " Color-schemes
     Plug 'fcpg/vim-orbital'
     Plug 'arcticicestudio/nord-vim'
 
@@ -161,13 +160,18 @@ set tags=tags;                      " Set tags=tags; tells vim that the name of 
 let g:ale_sign_column_always = 1
 
 
-" ==================BETTER WHITESPACE=================
+" ==================BETTER WHITESPACE==================
 " Setting a custom color for whitespace.
 highlight ExtraWhitespace ctermbg=blue
 
 " Enable highlighting and stripping whitepsace on save by default.
 let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=1
+
+
+" ==================DEVICONS=========================
+" Force extra padding in NERDTree so that the filetype icons line up vertically.
+let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
 
 
 " ===================EMMET============================
