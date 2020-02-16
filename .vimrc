@@ -31,6 +31,7 @@ call plug#begin()
     Plug 'itchyny/lightline.vim'
     Plug 'itchyny/vim-gitbranch'
     Plug 'ntpeters/vim-better-whitespace'
+    Plug 'mattn/emmet-vim'
 
     " Browsing
     Plug 'scrooloose/nerdtree'
