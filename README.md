@@ -14,7 +14,7 @@
 - [limelight](https://github.com/junegunn/limelight.vim)
 - [NERDTree](https://github.com/preservim/nerdtree)
 - [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
-- [pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent)
+- [polyglot](https://github.com/sheerun/vim-polyglot)
 - [startify](https://github.com/Plug/mhinz/vim-startify)
 
 

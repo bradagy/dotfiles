@@ -40,8 +40,8 @@ call plug#begin()
     Plug 'mattn/emmet-vim'
 
     " Language Specific
-    " Plug 'vim-scripts/indentpython.vim'
     Plug 'Vimjas/vim-python-pep8-indent'
+    Plug 'sheerun/vim-polyglot'
 
     " Color-schemes
     Plug 'fcpg/vim-orbital'
@@ -258,3 +258,6 @@ let g:nord_bold_vertical_split_line = 1
 let g:nord_italic = 1
 " Enabling italic comments while using the Nord colorscheme.
 let g:nord_italic_comments = 1
+
+
+" ==================VIM PEP8-INDENT==================
