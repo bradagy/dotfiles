@@ -38,9 +38,9 @@ call plug#begin()
     Plug 'itchyny/vim-gitbranch'
     Plug 'ntpeters/vim-better-whitespace'
     Plug 'mattn/emmet-vim'
+    Plug 'kien/rainbow_parentheses.vim'
 
     " Language Specific
-    Plug 'Vimjas/vim-python-pep8-indent'
     Plug 'sheerun/vim-polyglot'
 
     " Color-schemes
@@ -260,4 +260,5 @@ let g:nord_italic = 1
 let g:nord_italic_comments = 1
 
 
-" ==================VIM PEP8-INDENT==================
+" ==================RAINBOW PARENTHESES==============
+
