@@ -14,6 +14,8 @@
 - [limelight](https://github.com/junegunn/limelight.vim)
 - [NERDTree](https://github.com/preservim/nerdtree)
 - [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
+- [startify](https://github.com/Plug/mhinz/vim-startify)
+
 
 ## Colors
 - [orbital](https://github.com/fcpg/vim-orbital)

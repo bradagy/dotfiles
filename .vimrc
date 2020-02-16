@@ -20,10 +20,13 @@ set rtp+=~/.fzf
 " ====================PLUGINS====================
 call plug#begin()
 
-    " Coding
+    " Code/Project Navigation
     Plug 'dense-analysis/ale'
     Plug 'junegunn/fzf'
     Plug 'junegunn/fzf.vim'
+    Plug 'scrooloose/nerdtree'
+    Plug 'Yggdroot/indentLine'
+    Plug 'ryanoasis/vim-devicons'
 
     " Editing
     Plug 'junegunn/goyo.vim'
@@ -33,16 +36,13 @@ call plug#begin()
     Plug 'ntpeters/vim-better-whitespace'
     Plug 'mattn/emmet-vim'
 
-    " Browsing
-    Plug 'scrooloose/nerdtree'
-    Plug 'Yggdroot/indentLine'
-    Plug 'ryanoasis/vim-devicons'
 
     " Language Specific
     Plug 'vim-scripts/indentpython.vim'
 
     " Miscellaneous
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
+    Plug 'mhinz/vim-startify'
 
     " Colors
     Plug 'fcpg/vim-orbital'
