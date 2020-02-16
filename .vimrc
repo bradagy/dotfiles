@@ -41,7 +41,6 @@ call plug#begin()
     Plug 'luochen1990/rainbow'
 
     " Language Specific
-    Plug 'sheerun/vim-polyglot'
 
     " Color-schemes
     Plug 'fcpg/vim-orbital'
