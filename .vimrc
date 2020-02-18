@@ -65,7 +65,7 @@ set fileformat=unix                 " For unix text files. Convert to 'Dos' for 
 set encoding=utf-8                  " Force UTF-8 encoding.
 set cursorcolumn                    " Highlight the current column.
 set cursorline                      " Focus on current line i'm working on.
-set textwidth=80                    " Lines can only be 80 characters long.
+" set textwidth=80                    " Lines can only be 80 characters long.
 set splitbelow                      " Open new panes to the right and bottom.
 set splitright
 set lazyredraw                      " Don't redraw while executing macros (helps performance).
@@ -242,6 +242,14 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Set the NERDTree window size to 30.
 let g:nerdtreewinsize=30
+
+" Will allow Startify to work when NERDTree opens automatically.
+autocmd VimEnter *
+            \   if !argc()
+            \ |   Startify
+            \ |   NERDTree
+            \ |   wincmd w
+            \ | endif
 
 " Close Vim if the only window open is NERDTree.
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
