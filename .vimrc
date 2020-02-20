@@ -65,7 +65,7 @@ set fileformat=unix                 " For unix text files. Convert to 'Dos' for 
 set encoding=utf-8                  " Force UTF-8 encoding.
 set cursorcolumn                    " Highlight the current column.
 set cursorline                      " Focus on current line i'm working on.
-" set textwidth=80                    " Lines can only be 80 characters long.
+set textwidth=80                    " Setting the textwidth to 80 characters.
 set splitbelow                      " Open new panes to the right and bottom.
 set splitright
 set lazyredraw                      " Don't redraw while executing macros (helps performance).
@@ -74,6 +74,7 @@ set wildmenu
 set background=dark                 " Vim uses colors that would look the best on a dark background.
 set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
+
 syntax enable                       " Enable syntax processing.
 colorscheme nord                    " Setting colorscheme to nord.
 
@@ -134,8 +135,6 @@ nnoremap <C-H> <C-W><C-H>
 " to move around by remapping them.
 nnoremap B ^
 nnoremap E $
-
-
 
 " Change leader shortcut to comma instead of backslash.
 let mapleader=","
