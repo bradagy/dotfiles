@@ -19,6 +19,7 @@
 - [pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent)
 - [rainbow-parentheses](https://github.com/luochen1990/rainbow)
 - [startify](https://github.com/Plug/mhinz/vim-startify)
+- [tagbar](https://github.com/majutsushi/tagbar)
 
 
 ## Colors

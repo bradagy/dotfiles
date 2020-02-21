@@ -28,6 +28,7 @@ call plug#begin()
     Plug 'Yggdroot/indentLine'
     Plug 'ryanoasis/vim-devicons'
     Plug 'yuttie/comfortable-motion.vim'
+    Plug 'majutsushi/tagbar'
 
     " Miscellaneous
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
@@ -45,7 +46,7 @@ call plug#begin()
     Plug 'lepture/vim-jinja'
     Plug 'mitsuhiko/vim-python-combined'
 
-    " Color-schemes
+    " Colors
     Plug 'fcpg/vim-orbital'
     Plug 'arcticicestudio/nord-vim'
 
@@ -60,7 +61,6 @@ filetype plugin indent on
 
 " ===================GENERAL CONFIG===================
 set number relativenumber           " Hybrid numbers (set number & set relativenumber)
-set t_Co=256                        " Tell Vim to accept 256 colors.
 set fileformat=unix                 " For unix text files. Convert to 'Dos' for Windows.
 set encoding=utf-8                  " Force UTF-8 encoding.
 set cursorcolumn                    " Highlight the current column.
@@ -72,6 +72,7 @@ set lazyredraw                      " Don't redraw while executing macros (helps
 set wildmode=longest,list,full      " Bash-like completion for file names.
 set wildmenu
 set background=dark                 " Vim uses colors that would look the best on a dark background.
+set t_Co=256                        " Tell Vim to accept 256 colors.
 set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
 
@@ -271,3 +272,8 @@ let g:nord_italic_comments = 1
 
 " ==================RAINBOW PARENTHESES==============
 let g:rainbow_active = 1
+
+
+" =================TAGBAR===========================
+" Automatically open Tagbar on Vim startup.
+autocmd VimEnter * nested :TagbarOpen
