@@ -2,6 +2,7 @@
 
 ## Plugins
 - [ale](https://github.com/dense-analysis/ale)
+- [animate](https://github.com/camspiers/animate.vim)
 - [better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
 - [comfortable-motion](https://github.com/Plug/yuttie/comfortable-motion.vim)
 - [devicons](https://github.com/ryanoasis/vim-devicons)
@@ -11,6 +12,7 @@
 - [goyo](https://github.com/junegunn/goyo.vim)
 - [indentLine](https://github.com/Yggdroot/indentLine)
 - [jinja](https://github.com/lepture/vim-jinja)
+- [lens](https://github.com/camspiers/lens.vim)
 - [lightline](https://github.com/itchyny/lightline.vim)
 - [limelight](https://github.com/junegunn/limelight.vim)
 - [NERDTree](https://github.com/preservim/nerdtree)

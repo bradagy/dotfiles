@@ -40,6 +40,8 @@ call plug#begin()
     Plug 'ntpeters/vim-better-whitespace'
     Plug 'mattn/emmet-vim'
     Plug 'luochen1990/rainbow'
+    Plug 'camspiers/animate.vim'
+    Plug 'camspiers/lens.vim'
 
     " Language Specific
     Plug 'Vimjas/vim-python-pep8-indent'
@@ -201,7 +203,6 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
-
 
 
 " ===================LIGHTLINE===================
