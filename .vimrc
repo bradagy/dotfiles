@@ -237,9 +237,20 @@ let g:limelight_conceal_ctermfg='gray'
 let g:limelight_priority=-1
 
 
+" ==================LENS VIM===========================
+" WHen resizing, do not go beyond the following height.
+let g:lens#height_resize_max = 30
+
+" When resizing do not go beyond the following width
+let g:lens#width_resize_max = 30
+
+
 " ===================NERDTree==========================
 " NERDTree Toggle with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
+
+" Automatically open NERDTree when Vim starts
+ au VimEnter *  NERDTree
 
 " Set the NERDTree window size to 30.
 let g:nerdtreewinsize=30
