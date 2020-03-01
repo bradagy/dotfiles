@@ -86,7 +86,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias enterdays='enterdays.py'
     alias poweroff='poweroff.py'
     alias envcreate='envcreate.sh'
-    alias coding='coding.sh'
+    alias onlymux='onlymux.sh'
 
 fi
 
