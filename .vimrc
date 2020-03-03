@@ -24,9 +24,9 @@ call plug#begin()
     Plug 'dense-analysis/ale'
     Plug 'junegunn/fzf'
     Plug 'junegunn/fzf.vim'
+    Plug 'ryanoasis/vim-devicons'
     Plug 'scrooloose/nerdtree'
     Plug 'Yggdroot/indentLine'
-    Plug 'ryanoasis/vim-devicons'
     Plug 'yuttie/comfortable-motion.vim'
     Plug 'majutsushi/tagbar'
 
@@ -248,13 +248,13 @@ let g:lens#width_resize_max = 30
 
 " ===================NERDTree==========================
 " NERDTree Toggle with Ctrl+n
-map <C-n> :NERDTreeToggle<CR>
+nmap <C-n> :NERDTreeToggle<CR>
 
 " Automatically open NERDTree when Vim starts
-au VimEnter *  NERDTree
+" au VimEnter *  NERDTree
 
 " Switch the cursor to the file editing area rather than in the NERDTree buffer.
-autocmd VimEnter * NERDTree | wincmd p
+" autocmd VimEnter * NERDTree | wincmd p
 
 " Set the NERDTree window size to 30.
 let g:nerdtreewinsize=30
@@ -293,4 +293,7 @@ let g:rainbow_active = 1
 
 " =================TAGBAR===========================
 " Automatically open Tagbar on Vim startup.
-autocmd VimEnter * nested :TagbarOpen
+" autocmd VimEnter * nested :TagbarOpen
+
+" Tagbar toggle with Ctrl + m
+nmap <C-m> :TagbarToggle<CR>
