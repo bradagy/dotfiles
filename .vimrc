@@ -79,7 +79,7 @@ set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
 
 syntax enable                       " Enable syntax processing.
-colorscheme nord                    " Setting colorscheme to nord.
+colorscheme orbital                    " Setting colorscheme to orbital.
 
 " Italic comments (when default vim colorscheme is in play).
 highlight Comment cterm=italic gui=italic
@@ -212,7 +212,7 @@ set laststatus=2                    " Allowing the Lightline status bar to becom
 " Adding colorscheme to lightline and allowing git branch information to be
 " shown.
 let g:lightline = {
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'orbital',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
