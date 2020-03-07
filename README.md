@@ -10,6 +10,7 @@
 - [fzf](https://github.com/junegunn/fzf.vim)
 - [gitbranch - for lightline](https://github.com/itchyny/vim-gitbranch)
 - [goyo](https://github.com/junegunn/goyo.vim)
+- [hemisu](https://github.com/noahfrederick/vim-hemisu)
 - [indentLine](https://github.com/Yggdroot/indentLine)
 - [jinja](https://github.com/lepture/vim-jinja)
 - [lens](https://github.com/camspiers/lens.vim)

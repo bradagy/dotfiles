@@ -51,6 +51,7 @@ call plug#begin()
     " Colors
     Plug 'fcpg/vim-orbital'
     Plug 'arcticicestudio/nord-vim'
+    Plug 'noahfrederick/vim-hemisu'
 
 call plug#end()
 
@@ -79,7 +80,7 @@ set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
 
 syntax enable                       " Enable syntax processing.
-colorscheme orbital                    " Setting colorscheme to orbital.
+colorscheme hemisu                    " Setting colorscheme to hemisu.
 
 " Italic comments (when default vim colorscheme is in play).
 highlight Comment cterm=italic gui=italic
