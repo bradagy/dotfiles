@@ -80,9 +80,9 @@ set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
 
 syntax enable                       " Enable syntax processing.
-colorscheme hemisu                    " Setting colorscheme to hemisu.
+colorscheme nord                    " Setting colorscheme to nord.
 
-" Italic comments (when default vim colorscheme is in play).
+" Italic comments (works when default vim is active as well).
 highlight Comment cterm=italic gui=italic
 
 " Syntax highlighting for Python files.
