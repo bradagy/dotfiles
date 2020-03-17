@@ -8,6 +8,7 @@
 - [devicons](https://github.com/ryanoasis/vim-devicons)
 - [emmet](https://github.com/mattn/emmet-vim)
 - [fzf](https://github.com/junegunn/fzf.vim)
+- [gemini](https://github.com/KaraMCC/vim-gemini)
 - [gitbranch - for lightline](https://github.com/itchyny/vim-gitbranch)
 - [goyo](https://github.com/junegunn/goyo.vim)
 - [indentLine](https://github.com/Yggdroot/indentLine)
@@ -17,15 +18,14 @@
 - [limelight](https://github.com/junegunn/limelight.vim)
 - [NERDTree](https://github.com/preservim/nerdtree)
 - [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
-- [python-combined](https://github.com/mitsuhiko/vim-python-combined')
 - [pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent)
+- [python-combined](https://github.com/mitsuhiko/vim-python-combined')
 - [rainbow-parentheses](https://github.com/luochen1990/rainbow)
 - [startify](https://github.com/Plug/mhinz/vim-startify)
 - [tagbar](https://github.com/majutsushi/tagbar)
 
 
 ## Colors
-- [orbital](https://github.com/fcpg/vim-orbital)
 - [nord](https://github.com/arcticicestudio/nord-vim)
 - [hemisu](https://github.com/noahfrederick/vim-hemisu)
 

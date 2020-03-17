@@ -29,6 +29,7 @@ call plug#begin()
     Plug 'Yggdroot/indentLine'
     Plug 'yuttie/comfortable-motion.vim'
     Plug 'majutsushi/tagbar'
+    Plug 'KaraMCC/vim-gemini'
 
     " Miscellaneous
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
@@ -49,7 +50,6 @@ call plug#begin()
     Plug 'mitsuhiko/vim-python-combined'
 
     " Colors
-    Plug 'fcpg/vim-orbital'
     Plug 'arcticicestudio/nord-vim'
     Plug 'noahfrederick/vim-hemisu'
 
@@ -80,7 +80,7 @@ set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
 
 syntax enable                       " Enable syntax processing.
-colorscheme nord                    " Setting colorscheme to nord.
+colorscheme hemisu                    " Setting colorscheme to hemisu.
 
 " Italic comments (works when default vim is active as well).
 highlight Comment cterm=italic gui=italic
@@ -213,7 +213,7 @@ set laststatus=2                    " Allowing the Lightline status bar to becom
 " Adding colorscheme to lightline and allowing git branch information to be
 " shown.
 let g:lightline = {
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'default',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
