@@ -87,6 +87,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias poweroff='poweroff.py'
     alias envcreate='envcreate.sh'
     alias onlymux='onlymux.sh'
+    alias activate='source venv/bin/activate'
 
 fi
 
@@ -122,6 +123,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# FZF configurations.
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 export FZF_DEFAULT_OPS="--extended"
 
