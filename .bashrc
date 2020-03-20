@@ -123,9 +123,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# FZF configurations.
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-export FZF_DEFAULT_OPS="--extended"
-
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# FZF Configurations.
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# Regex matching. Find any file that ends in a certain extension.
+export FZF_DEFAULT_OPS="--extended"
+# Ignores file specified by gitignore
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
