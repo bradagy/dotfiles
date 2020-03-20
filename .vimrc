@@ -22,14 +22,14 @@ call plug#begin()
 
     " Code/Project Navigation
     Plug 'dense-analysis/ale'
-    Plug 'junegunn/fzf'
-    Plug 'junegunn/fzf.vim'
     Plug 'ryanoasis/vim-devicons'
     Plug 'scrooloose/nerdtree'
     Plug 'Yggdroot/indentLine'
     Plug 'yuttie/comfortable-motion.vim'
     Plug 'majutsushi/tagbar'
     Plug 'KaraMCC/vim-gemini'
+    Plug 'junegunn/fzf'
+    Plug 'junegunn/fzf.vim'
 
     " Miscellaneous
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
@@ -80,7 +80,7 @@ set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
 
 syntax enable                       " Enable syntax processing.
-colorscheme hemisu                    " Setting colorscheme to hemisu.
+colorscheme nord                    " Setting colorscheme nord.
 
 " Italic comments (works when default vim is active as well).
 highlight Comment cterm=italic gui=italic
@@ -213,7 +213,7 @@ set laststatus=2                    " Allowing the Lightline status bar to becom
 " Adding colorscheme to lightline and allowing git branch information to be
 " shown.
 let g:lightline = {
-      \ 'colorscheme': 'default',
+      \ 'colorscheme': 'nord',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -288,7 +288,8 @@ let g:nord_italic = 1
 let g:nord_italic_comments = 1
 
 
-" ==================RAINBOW PARENTHESES==============
+" =================RAINBOW==========================
+" Activate rainbow parentheses.
 let g:rainbow_active = 1
 
 
