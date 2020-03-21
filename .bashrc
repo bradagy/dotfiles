@@ -132,3 +132,15 @@ eval "$(rbenv init -)"
 export FZF_DEFAULT_OPS="--extended"
 # Ignores file specified by gitignore
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# Open neofetch as soon as I open up my bash prompt.
+neofetch
+
+# Powerline functionality for the bash terminal.
+function _update_ps1() {
+    PS1=$(powerline-shell $?)
+}
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
