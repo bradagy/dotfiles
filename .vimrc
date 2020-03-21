@@ -114,8 +114,8 @@ set showmatch                       " Shows matching pair of brackets (), [], {}
 set visualbell                      " No sounds.
 set noerrorbells                    " Disable error bells.
 set t_vb=                           " Disable flashing que.
-" set title                           " Shows the current file path at the top of the window.
-set notitle                         " Remove 'Thanks for Flying Vim' message with Powerwline shell enabled.
+" set title                         " Shows the current file path at the top of the window.
+set notitle                         " Remove the 'Thanks for Flying Vim' message when the Powerwline shell is enabled.
 
 
 " ===================REMAPPINGS======================
