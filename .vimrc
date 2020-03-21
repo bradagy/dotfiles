@@ -105,6 +105,7 @@ set softtabstop=4                   " Number of spaces inserted when <TAB> is pr
 set tabstop=4                       " Number of visual spaces per <TAB>.
 set expandtab                       " Convert tabs to spaces. AKA <TAB> means 'insert four spaces.'
 set nowrap                          " Do not wrap lines.
+set nofixendofline                  " Prevent vim from adding newlines to the end of files.
 
 
 " ==================UI SETTINGS========================
