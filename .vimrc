@@ -30,6 +30,7 @@ call plug#begin()
     Plug 'KaraMCC/vim-gemini'
     Plug 'junegunn/fzf'
     Plug 'junegunn/fzf.vim'
+    Plug 'airblade/vim-gitgutter'
 
     " Miscellaneous
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
@@ -205,6 +206,21 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+
+
+" =================GITGUTTER=========================
+" Making sure the diff markers appear more quickly.
+set updatetime=250
+
+" To keep Vim extremely response, vim-gitgutter will suppress the signs
+" when a file has more than 500 changes. As soon as the number of changes
+" falls below the limit vim-gitgutter will show the signs again.
+" Configure the threshold with:
+let g:gitgutter_max_sings = 500
+
+" By default the sign column will appear when there are signs to show and
+" disappear when there aren't. To always have the sign column, add:
+set signcolumn=yes
 
 
 " ===================LIGHTLINE===================
