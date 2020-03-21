@@ -119,6 +119,9 @@ set notitle                         " Remove the 'Thanks for Flying Vim' message
 
 
 " ===================REMAPPINGS======================
+" Change leader shortcut to comma instead of backslash.
+let mapleader=","
+
 inoremap {<cr> {<cr>}<c-o><s-o>
 inoremap [<cr> [<cr>]<c-o><s-o>
 inoremap (<cr> (<cr>)<c-o><s-o>
@@ -143,8 +146,8 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap B ^
 nnoremap E $
 
-" Change leader shortcut to comma instead of backslash.
-let mapleader=","
+" Insert pdb import statement when SHIFT + <leader>p is pressed.
+nnoremap <leader><S-p> Oimport pdb; pdb.set_trace()<Esc>
 
 
 " ===================SEARCH===========================
