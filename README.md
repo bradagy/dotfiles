@@ -29,6 +29,7 @@
 ## Colors
 - [nord](https://github.com/arcticicestudio/nord-vim)
 - [hemisu](https://github.com/noahfrederick/vim-hemisu)
+- [warlock](https://github.com/hardselius/warlock)
 
 ## Terminal Multiplexer
 - tmux

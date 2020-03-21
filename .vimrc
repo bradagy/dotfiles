@@ -8,7 +8,6 @@
 "                                                                              "
 "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-
 " Use Vim settings, rather then Vi settings
 " This must be first because it changes other options as a side effect.
 set nocompatible
@@ -53,6 +52,7 @@ call plug#begin()
     " Colors
     Plug 'arcticicestudio/nord-vim'
     Plug 'noahfrederick/vim-hemisu'
+    Plug 'hardselius/warlock'
 
 call plug#end()
 
@@ -81,7 +81,7 @@ set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
 
 syntax enable                       " Enable syntax processing.
-colorscheme nord                    " Setting colorscheme nord.
+colorscheme warlock                    " Setting colorscheme warlock.
 
 " Italic comments (works when default vim is active as well).
 highlight Comment cterm=italic gui=italic
@@ -239,7 +239,7 @@ set laststatus=2                    " Allowing the Lightline status bar to becom
 " Adding colorscheme to lightline and allowing git branch information to be
 " shown.
 let g:lightline = {
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'default',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
