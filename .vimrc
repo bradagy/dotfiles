@@ -52,7 +52,6 @@ call plug#begin()
     " Colors
     Plug 'arcticicestudio/nord-vim'
     Plug 'noahfrederick/vim-hemisu'
-    Plug 'hardselius/warlock'
 
 call plug#end()
 
@@ -81,7 +80,7 @@ set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
 
 syntax enable                       " Enable syntax processing.
-colorscheme warlock                    " Setting colorscheme warlock.
+colorscheme nord                    " Setting colorscheme nord.
 
 " Italic comments (works when default vim is active as well).
 highlight Comment cterm=italic gui=italic
@@ -239,7 +238,7 @@ set laststatus=2                    " Allowing the Lightline status bar to becom
 " Adding colorscheme to lightline and allowing git branch information to be
 " shown.
 let g:lightline = {
-      \ 'colorscheme': 'default',
+      \ 'colorscheme': 'nord',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
