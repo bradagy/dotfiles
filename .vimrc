@@ -115,7 +115,7 @@ set nofixendofline                  " Prevent vim from adding newlines to the en
 
 " ==================UI SETTINGS========================
 set ruler                           " Show current line number at the bottom.
-set showmode                        " Show the mode I'm currently in.
+set noshowmode                      " Do not show the current mode since Lightline does it automatically.
 set showmatch                       " Shows matching pair of brackets (), [], {}.
 set visualbell                      " No sounds.
 set noerrorbells                    " Disable error bells.
@@ -242,7 +242,7 @@ set signcolumn=yes
 set laststatus=2                    " Allowing the Lightline status bar to become visible.
 
 " Adding colorscheme to lightline and allowing git branch information to be
-" shown.
+" shown. Also adding devicon functionality.
 let g:lightline = {
       \ 'colorscheme': 'nord',
       \ 'active': {
@@ -250,9 +250,19 @@ let g:lightline = {
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
       \ },
       \ 'component_function': {
-      \   'gitbranch': 'gitbranch#name'
+      \   'gitbranch': 'gitbranch#name',
+      \   'filetype': 'MyFiletype',
+      \   'fileformat': 'MyFileformat',
       \ },
       \ }
+
+function! MyFiletype()
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+endfunction
+
+function! MyFileformat()
+  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+endfunction
 
 
 " ===================GOYO & LIMELIGHT===================
