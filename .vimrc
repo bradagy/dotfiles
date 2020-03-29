@@ -73,7 +73,7 @@ set number relativenumber           " Hybrid numbers (set number & set relativen
 set fileformat=unix                 " For unix text files. Convert to 'Dos' for Windows.
 set encoding=utf-8                  " Force UTF-8 encoding.
 set cursorcolumn                    " Highlight the current column.
-set cursorline                      " Focus on current line i'm working on.
+set cursorline                      " Focus on current line I'm working on.
 set textwidth=80                    " Setting the textwidth to 80 characters.
 set splitbelow                      " Open new panes to the right and bottom.
 set splitright
@@ -111,6 +111,7 @@ set tabstop=4                       " Number of visual spaces per <TAB>.
 set expandtab                       " Convert tabs to spaces. AKA <TAB> means 'insert four spaces.'
 set nowrap                          " Do not wrap lines.
 set nofixendofline                  " Prevent vim from adding newlines to the end of files.
+set spell spelllang=en_us
 
 
 " ==================UI SETTINGS========================
@@ -121,7 +122,7 @@ set visualbell                      " No sounds.
 set noerrorbells                    " Disable error bells.
 set t_vb=                           " Disable flashing que.
 " set title                         " Shows the current file path at the top of the window.
-set notitle                         " Remove the 'Thanks for Flying Vim' message when the Powerwline shell is enabled.
+set notitle                         " Remove the 'Thanks for Flying Vim' message when the Powerline shell is enabled.
 
 
 " ===================REMAPPINGS======================
@@ -155,6 +156,8 @@ nnoremap E $
 " Insert pdb import statement when SHIFT + <leader>p is pressed.
 nnoremap <leader><S-p> Oimport pdb; pdb.set_trace()<Esc>
 
+nnoremap <leader><S-b> O#!/usr/bin/env python3<Esc>
+
 
 " ===================SEARCH===========================
 set incsearch                       " Find the next match as I search a word.
@@ -173,8 +176,9 @@ set tags=tags;                      " Set tags=tags; tells vim that the name of 
 
 
 " ===================GENERAL FUNCTIONS================
-autocmd BufNewFile,BufRead *.md set spell spelllang=en_us
-
+" Automatically generate a shebang at the top of files
+" and insert two blank lines.
+autocmd BufNewFile * if !empty(&filetype) | execute 'silent! 1s/.*/#!\/usr\/bin\/' . &filetype . '\r\r'| | endif
 
 
 " ===================ALE (LINTING)=====================
@@ -225,7 +229,7 @@ let g:fzf_colors =
 
 " =================GITGUTTER=========================
 " Making sure the diff markers appear more quickly.
-set updatetime=250
+set updatetime=100
 
 " To keep Vim extremely response, vim-gitgutter will suppress the signs
 " when a file has more than 500 changes. As soon as the number of changes
@@ -281,7 +285,7 @@ let g:limelight_priority=-1
 
 
 " ==================LENS VIM===========================
-" WHen resizing, do not go beyond the following height.
+" When resizing, do not go beyond the following height.
 let g:lens#height_resize_max = 30
 
 " When resizing do not go beyond the following width
