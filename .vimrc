@@ -49,6 +49,7 @@ call plug#begin()
     Plug 'luochen1990/rainbow'
     Plug 'camspiers/animate.vim'
     Plug 'camspiers/lens.vim'
+    Plug 'junegunn/vim-emoji'
 
     " Language Specific
     Plug 'Vimjas/vim-python-pep8-indent'
@@ -176,9 +177,6 @@ set tags=tags;                      " Set tags=tags; tells vim that the name of 
 
 
 " ===================GENERAL FUNCTIONS================
-" Automatically generate a shebang at the top of files
-" and insert two blank lines.
-autocmd BufNewFile * if !empty(&filetype) | execute 'silent! 1s/.*/#!\/usr\/bin\/' . &filetype . '\r\r'| | endif
 
 
 " ===================ALE (LINTING)=====================
@@ -207,6 +205,14 @@ autocmd FileType html,css EmmetInstall
 
 " Mapping the emmet leader key to ','.
 let g:user_emmet_leader_key=','
+
+
+" ==================EMOJI============================
+" Use emojis as gitgutter symbols.
+let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
+let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
+let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
+let g:gitgutter_sign_modified_removed = emoji#for('collision')
 
 
 " =================FZF================================

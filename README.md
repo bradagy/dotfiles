@@ -7,6 +7,7 @@
 - [comfortable-motion](https://github.com/Plug/yuttie/comfortable-motion.vim)
 - [devicons](https://github.com/ryanoasis/vim-devicons)
 - [emmet](https://github.com/mattn/emmet-vim)
+- [emoji](https://github.com/junegunn/vim-emoji)
 - [gitgutter](https://github.com/airblade/vim-gitgutter)
 - [fzf](https://github.com/junegunn/fzf.vim)
 - [gemini](https://github.com/KaraMCC/vim-gemini)
