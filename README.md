@@ -32,4 +32,4 @@
 - [hemisu](https://github.com/noahfrederick/vim-hemisu)
 
 ## Terminal Multiplexer
-- tmux
+- [tmux](https://github.com/tmux/tmux)
