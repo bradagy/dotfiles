@@ -28,8 +28,9 @@
 
 
 ## Colors
-- [nord](https://github.com/arcticicestudio/nord-vim)
 - [hemisu](https://github.com/noahfrederick/vim-hemisu)
+- [kuroi](https://github.com/aonemd/kuroi.vim)
+- [nord](https://github.com/arcticicestudio/nord-vim)
 
 ## Terminal Multiplexer
 - [tmux](https://github.com/tmux/tmux)

@@ -59,6 +59,7 @@ call plug#begin()
     " Colors
     Plug 'arcticicestudio/nord-vim'
     Plug 'noahfrederick/vim-hemisu'
+    Plug 'aonemd/kuroi.vim'
 
 call plug#end()
 
@@ -87,7 +88,7 @@ set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
 
 syntax enable                       " Enable syntax processing.
-colorscheme nord                    " Setting colorscheme nord.
+colorscheme kuroi                    " Setting colorscheme kuroi.
 
 " Italic comments (works when default vim is active as well).
 highlight Comment cterm=italic gui=italic
@@ -254,7 +255,7 @@ set laststatus=2                    " Allowing the Lightline status bar to becom
 " Adding colorscheme to lightline and allowing git branch information to be
 " shown. Also adding devicon functionality.
 let g:lightline = {
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'jellybeans',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
