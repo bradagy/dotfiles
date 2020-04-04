@@ -29,7 +29,6 @@
 
 ## Colors
 - [hemisu](https://github.com/noahfrederick/vim-hemisu)
-- [kuroi](https://github.com/aonemd/kuroi.vim)
 - [nord](https://github.com/arcticicestudio/nord-vim)
 
 ## Terminal Multiplexer
