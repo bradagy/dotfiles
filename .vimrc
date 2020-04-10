@@ -1,7 +1,6 @@
 "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 "                                                                              "
-"                       __   _ _ _ __ ___  _ __ ___                            "
-"                       \ \ / / | '_ ` _ \| '__/ __|                           "
+"                       __   _ _ _ __ ___  _ __ ___                            " "                       \ \ / / | '_ ` _ \| '__/ __|                           "
 "                        \ V /| | | | | | | | | (__                            "
 "                         \_/ |_|_| |_| |_|_|  \___|                           "
 "                                                                              "
@@ -36,6 +35,7 @@ call plug#begin()
     Plug 'junegunn/fzf'
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-gitgutter'
+    Plug 'maximbaz/lightline-ale'
 
     " Miscellaneous
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
@@ -252,27 +252,28 @@ set signcolumn=yes
 set laststatus=2                    " Allowing the Lightline status bar to become visible.
 
 " Adding colorscheme to lightline and allowing git branch information to be
-" shown. Also adding devicon functionality.
-let g:lightline = {
-      \ 'colorscheme': 'nord',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'gitbranch#name',
-      \   'filetype': 'MyFiletype',
-      \   'fileformat': 'MyFileformat',
-      \ },
-      \ }
+" shown.
+ let g:lightline = {
+       \ 'colorscheme': 'nord',
+       \ 'active': {
+       \   'left': [ [ 'mode', 'paste' ],
+       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+       \ },
+       \ 'component_function': {
+       \   'gitbranch': 'gitbranch#name',
+       \   'filetype': 'MyFiletype',
+       \   'fileformat': 'MyFileformat',
+       \ },
+       \ }
 
+ " Adding devicon functionality
 function! MyFiletype()
-  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
-endfunction
+    return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+ endfunction
 
 function! MyFileformat()
-  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
-endfunction
+    return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+ endfunction
 
 
 " ===================GOYO & LIMELIGHT===================
