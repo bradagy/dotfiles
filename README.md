@@ -1,6 +1,7 @@
 # Dotfile Things
 
 ## Plugins
+- [airline](https://github.com/vim-airline/vim-airline)
 - [ale](https://github.com/dense-analysis/ale)
 - [animate](https://github.com/camspiers/animate.vim)
 - [better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
@@ -16,8 +17,6 @@
 - [indentLine](https://github.com/Yggdroot/indentLine)
 - [jinja](https://github.com/lepture/vim-jinja)
 - [lens](https://github.com/camspiers/lens.vim)
-- [lightline](https://github.com/itchyny/lightline.vim)
-- [limelight](https://github.com/junegunn/limelight.vim)
 - [NERDTree](https://github.com/preservim/nerdtree)
 - [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
 - [pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent)

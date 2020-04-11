@@ -35,20 +35,19 @@ call plug#begin()
     Plug 'junegunn/fzf'
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-gitgutter'
-    Plug 'maximbaz/lightline-ale'
+    Plug 'vim-airline/vim-airline'
 
     " Miscellaneous
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
     Plug 'mhinz/vim-startify'
-    Plug 'junegunn/goyo.vim'
     Plug 'junegunn/limelight.vim'
-    Plug 'itchyny/lightline.vim'
     Plug 'itchyny/vim-gitbranch'
     Plug 'ntpeters/vim-better-whitespace'
     Plug 'mattn/emmet-vim'
     Plug 'luochen1990/rainbow'
     Plug 'camspiers/animate.vim'
     Plug 'camspiers/lens.vim'
+    Plug 'reedes/vim-wheel'
     Plug 'junegunn/vim-emoji'
 
     " Language Specific
@@ -183,6 +182,12 @@ set tags=tags;                      " Set tags=tags; tells vim that the name of 
 " Allow ALE to continuously check my code.
 let g:ale_sign_column_always = 1
 
+" ===================AIRLINE============================
+" Setting Powerline font style for Airline.
+let g:airline_powerline_fonts = 1
+
+let g:airline#extensions#tabline#enabled = 1
+
 
 " ==================BETTER WHITESPACE==================
 " Setting a custom color for whitespace.
@@ -246,57 +251,6 @@ let g:gitgutter_max_sings = 500
 " By default the sign column will appear when there are signs to show and
 " disappear when there aren't. To always have the sign column, add:
 set signcolumn=yes
-
-
-" ===================LIGHTLINE===================
-set laststatus=2                    " Allowing the Lightline status bar to become visible.
-
-" Adding colorscheme to lightline and allowing git branch information to be
-" shown.
- let g:lightline = {
-       \ 'colorscheme': 'nord',
-       \ 'active': {
-       \   'left': [ [ 'mode', 'paste' ],
-       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-       \ },
-       \ 'component_function': {
-       \   'gitbranch': 'gitbranch#name',
-       \   'filetype': 'MyFiletype',
-       \   'fileformat': 'MyFileformat',
-       \ },
-       \ }
-
- " Adding devicon functionality
-function! MyFiletype()
-    return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
- endfunction
-
-function! MyFileformat()
-    return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
- endfunction
-
-
-" ===================GOYO & LIMELIGHT===================
-" Turn on limelight when goyo is being used.
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
-
-" Line numbers will be also be available when using Goyo (plugin).
-let g:goyo_linenr=1
-
-" Paragraphs not being focused on will be in gray.
-let g:limelight_conceal_ctermfg='gray'
-
-" Setting highlight priority to -1. This will not overrule hlsearch.
-let g:limelight_priority=-1
-
-
-" ==================LENS VIM===========================
-" When resizing, do not go beyond the following height.
-let g:lens#height_resize_max = 30
-
-" When resizing do not go beyond the following width
-let g:lens#width_resize_max = 30
 
 
 " ===================NERDTree==========================
