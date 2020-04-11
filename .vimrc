@@ -253,6 +253,22 @@ let g:gitgutter_max_sings = 500
 set signcolumn=yes
 
 
+" ================LENS==============================
+" When resizing, do not go beyond the following height.
+let g:lens#height_resize_max = 30
+
+" When resizing do not go beyond the following width
+let g:lens#width_resize_max = 30
+
+
+" ===============LIMELIGHT=========================
+" Paragraphs not being focused on will be in gray.
+let g:limelight_conceal_ctermfg='gray'
+
+" Setting highlight priority to -1. This will not overrule hlsearch.
+let g:limelight_priority=-1
+
+
 " ===================NERDTree==========================
 " NERDTree Toggle with Ctrl+n
 nmap <C-n> :NERDTreeToggle<CR>
