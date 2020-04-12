@@ -1,6 +1,6 @@
 "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 "                                                                              "
-"                       __   _ _ _ __ ___  _ __ ___                            " "                       \ \ / / | '_ ` _ \| '__/ __|                           "
+"                       __   _ _ _ __ ___  _ __ ___                            "
 "                        \ V /| | | | | | | | | (__                            "
 "                         \_/ |_|_| |_| |_|_|  \___|                           "
 "                                                                              "
@@ -36,6 +36,7 @@ call plug#begin()
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-gitgutter'
     Plug 'vim-airline/vim-airline'
+    Plug 'sbdchd/vim-shebang'
 
     " Miscellaneous
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
@@ -57,6 +58,7 @@ call plug#begin()
     " Colors
     Plug 'arcticicestudio/nord-vim'
     Plug 'noahfrederick/vim-hemisu'
+    Plug 'xero/sourcerer.vim'
 
 call plug#end()
 
@@ -152,9 +154,10 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap B ^
 nnoremap E $
 
-" Insert pdb import statement when SHIFT + <leader>p is pressed.
+" Insert pdb import statement when  <leader>p + SHIFT is pressed.
 nnoremap <leader><S-p> Oimport pdb; pdb.set_trace()<Esc>
 
+"Insert python shebang when <leader> + SHIFT + b is pressed."
 nnoremap <leader><S-b> O#!/usr/bin/env python3<Esc>
 
 
@@ -310,6 +313,16 @@ let g:nord_italic_comments = 1
 " =================RAINBOW==========================
 " Activate rainbow parentheses.
 let g:rainbow_active = 1
+
+
+" ================SHEBANG===========================
+" Automatically adding shebang at the top of the file whenever a file is created.
+au! BufNewFile * ShebangInsert
+
+" Add/change/remove a shebang and filetype.
+let g:shebang#shebangs = {
+            \ 'python': '#!/usr/bin/env python3',
+            \ }
 
 
 " =================TAGBAR===========================

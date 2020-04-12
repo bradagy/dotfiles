@@ -22,6 +22,7 @@
 - [pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent)
 - [python-combined](https://github.com/mitsuhiko/vim-python-combined')
 - [rainbow-parentheses](https://github.com/luochen1990/rainbow)
+- [shebang](https://github.com/sbdchd/vim-shebang)
 - [startify](https://github.com/Plug/mhinz/vim-startify)
 - [tagbar](https://github.com/majutsushi/tagbar)
 
