@@ -41,7 +41,6 @@ call plug#begin()
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
     Plug 'mhinz/vim-startify'
     Plug 'junegunn/limelight.vim'
-    Plug 'itchyny/vim-gitbranch'
     Plug 'ntpeters/vim-better-whitespace'
     Plug 'mattn/emmet-vim'
     Plug 'luochen1990/rainbow'
@@ -185,8 +184,6 @@ let g:ale_sign_column_always = 1
 " ===================AIRLINE============================
 " Setting Powerline font style for Airline.
 let g:airline_powerline_fonts = 1
-
-let g:airline#extensions#tabline#enabled = 1
 
 
 " ==================BETTER WHITESPACE==================

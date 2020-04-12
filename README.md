@@ -12,7 +12,6 @@
 - [gitgutter](https://github.com/airblade/vim-gitgutter)
 - [fzf](https://github.com/junegunn/fzf.vim)
 - [gemini](https://github.com/KaraMCC/vim-gemini)
-- [gitbranch - for lightline](https://github.com/itchyny/vim-gitbranch)
 - [goyo](https://github.com/junegunn/goyo.vim)
 - [indentLine](https://github.com/Yggdroot/indentLine)
 - [jinja](https://github.com/lepture/vim-jinja)
