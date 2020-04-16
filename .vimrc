@@ -112,7 +112,7 @@ set tabstop=4                       " Number of visual spaces per <TAB>.
 set expandtab                       " Convert tabs to spaces. AKA <TAB> means 'insert four spaces.'
 set nowrap                          " Do not wrap lines.
 set nofixendofline                  " Prevent vim from adding newlines to the end of files.
-set spell spelllang=en_us
+set spell spelllang=en_us           " Set spell check to English grammar.
 
 
 " ==================UI SETTINGS========================
