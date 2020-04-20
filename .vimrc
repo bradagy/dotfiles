@@ -57,7 +57,6 @@ call plug#begin()
 
     " Colors
     Plug 'arcticicestudio/nord-vim'
-    Plug 'noahfrederick/vim-hemisu'
     Plug 'dylanaraps/wal.vim'
 
 call plug#end()
@@ -83,11 +82,12 @@ set wildmode=longest,list,full      " Bash-like completion for file names.
 set wildmenu
 set background=dark                 " Vim uses colors that would look the best on a dark background.
 set t_Co=256                        " Tell Vim to accept 256 colors.
-" set termguicolors
+set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
 
 syntax enable                       " Enable syntax processing.
-colorscheme wal                    " Setting colorscheme wal.
+highlight Comment ctermfg=green
+colorscheme nord                    " Setting colorscheme nord.
 
 " Italic comments (works when default vim is active as well).
 highlight Comment cterm=italic gui=italic
@@ -331,3 +331,6 @@ let g:shebang#shebangs = {
 
 " Tagbar toggle with Ctrl + m
 nmap <C-m> :TagbarToggle<CR>
+
+hi! Normal ctermbg=NONE guibg=NONE
+hi! Normal ctermbg=NONE guibg=NONE

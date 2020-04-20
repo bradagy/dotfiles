@@ -28,7 +28,6 @@
 - [wal](https://github.com/dylanaraps/pywal)
 
 ## Colors
-- [hemisu](https://github.com/noahfrederick/vim-hemisu)
 - [nord](https://github.com/arcticicestudio/nord-vim)
 
 ## Terminal Multiplexer
