@@ -160,3 +160,6 @@ cat ~/.cache/wal/sequences
 
 # To add support for TTYs this line can be optionally added.
 source ~/.cache/wal/colors-tty.sh
+
+# -R restores the last colorscheme that was in use.
+wal -R
