@@ -25,6 +25,7 @@
 - [shebang](https://github.com/sbdchd/vim-shebang)
 - [startify](https://github.com/Plug/mhinz/vim-startify)
 - [tagbar](https://github.com/majutsushi/tagbar)
+- [wal](https://github.com/dylanaraps/pywal)
 
 ## Colors
 - [hemisu](https://github.com/noahfrederick/vim-hemisu)

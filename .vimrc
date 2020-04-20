@@ -58,7 +58,7 @@ call plug#begin()
     " Colors
     Plug 'arcticicestudio/nord-vim'
     Plug 'noahfrederick/vim-hemisu'
-    Plug 'xero/sourcerer.vim'
+    Plug 'dylanaraps/wal.vim'
 
 call plug#end()
 
@@ -87,7 +87,7 @@ set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
 
 syntax enable                       " Enable syntax processing.
-colorscheme nord                    " Setting colorscheme nord.
+colorscheme wal                    " Setting colorscheme wal.
 
 " Italic comments (works when default vim is active as well).
 highlight Comment cterm=italic gui=italic
