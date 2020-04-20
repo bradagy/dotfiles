@@ -83,7 +83,7 @@ set wildmode=longest,list,full      " Bash-like completion for file names.
 set wildmenu
 set background=dark                 " Vim uses colors that would look the best on a dark background.
 set t_Co=256                        " Tell Vim to accept 256 colors.
-set termguicolors
+" set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
 
 syntax enable                       " Enable syntax processing.
