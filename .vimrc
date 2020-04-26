@@ -27,7 +27,6 @@ call plug#begin()
     " Code/Project Navigation
     Plug 'dense-analysis/ale'
     Plug 'ryanoasis/vim-devicons'
-    Plug 'scrooloose/nerdtree'
     Plug 'Yggdroot/indentLine'
     Plug 'yuttie/comfortable-motion.vim'
     Plug 'majutsushi/tagbar'
@@ -80,13 +79,15 @@ set splitright
 set lazyredraw                      " Don't redraw while executing macros (helps performance).
 set wildmode=longest,list,full      " Bash-like completion for file names.
 set wildmenu
-set background=dark                 " Vim uses colors that would look the best on a dark background.
-set t_Co=256                        " Tell Vim to accept 256 colors.
-set termguicolors
 set ttyfast                         " Improves smoothness of redrawing.
-
 syntax enable                       " Enable syntax processing.
-highlight Comment ctermfg=green
+
+if has('termguicolors')
+  set termguicolors
+endif
+
+set background=dark                 " Vim uses colors that would look the best on a dark background.
+
 colorscheme nord                    " Setting colorscheme nord.
 
 " Italic comments (works when default vim is active as well).
@@ -267,31 +268,6 @@ let g:limelight_conceal_ctermfg='gray'
 
 " Setting highlight priority to -1. This will not overrule hlsearch.
 let g:limelight_priority=-1
-
-
-" ===================NERDTree==========================
-" NERDTree Toggle with Ctrl+n
-nmap <C-n> :NERDTreeToggle<CR>
-
-" Automatically open NERDTree when Vim starts
-" au VimEnter *  NERDTree
-
-" Switch the cursor to the file editing area rather than in the NERDTree buffer.
-" autocmd VimEnter * NERDTree | wincmd p
-
-" Set the NERDTree window size to 30.
-let g:nerdtreewinsize=30
-
-" Will allow Startify to work when NERDTree opens automatically.
-autocmd VimEnter *
-            \   if !argc()
-            \ |   Startify
-            \ |   NERDTree
-            \ |   wincmd w
-            \ | endif
-
-" Close Vim if the only window open is NERDTree.
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 
 " ===================NORD=============================

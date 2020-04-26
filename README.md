@@ -20,7 +20,6 @@
 |[jinja](https://github.com/lepture/vim-jinja)|
 |[lens](https://github.com/camspiers/lens.vim)|
 |[limelight](https://github.com/junegunn/limelight.vim)|
-|[NERDTree](https://github.com/preservim/nerdtree)|
 |[numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)|
 |[pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent)|
 |[python-combined](https://github.com/mitsuhiko/vim-python-combined)|
