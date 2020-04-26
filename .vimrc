@@ -56,7 +56,7 @@ call plug#begin()
 
     " Colors
     Plug 'arcticicestudio/nord-vim'
-    Plug 'dylanaraps/wal.vim'
+
 
 call plug#end()
 
@@ -113,7 +113,6 @@ set tabstop=4                       " Number of visual spaces per <TAB>.
 set expandtab                       " Convert tabs to spaces. AKA <TAB> means 'insert four spaces.'
 set nowrap                          " Do not wrap lines.
 set nofixendofline                  " Prevent vim from adding newlines to the end of files.
-set spell spelllang=en_us           " Set spell check to English grammar.
 
 
 " ==================UI SETTINGS========================
@@ -179,6 +178,13 @@ set tags=tags;                      " Set tags=tags; tells vim that the name of 
 
 
 " ===================GENERAL FUNCTIONS================
+augroup markdownSpell
+    autocmd!
+    autocmd FileType markdown setlocal spell
+    autocmd BufRead,BufNewFile *.md setlocal spell
+    autocmd FileType text setlocal spell
+    autocmd BufRead, BufNewFile *.txt setlocal spell
+augroup END
 
 
 " ===================ALE (LINTING)=====================
