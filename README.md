@@ -2,8 +2,10 @@
 ![image](https://dotfiles.github.io/images/dotfiles-logo.png)
 
 ## Plugins
-| Plugins |
-| :---    |
+|Plugins|
+|-------|
+|[airline](https://github.com/vim-airline/vim-airline)|
+
 
 |[airline](https://github.com/vim-airline/vim-airline)|
 - [ale](https://github.com/dense-analysis/ale)
