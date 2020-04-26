@@ -1,7 +1,11 @@
 # Dotfile Things
+![image](https://dotfiles.github.io/images/dotfiles-logo.png)
 
 ## Plugins
-- [airline](https://github.com/vim-airline/vim-airline)
+| Plugins |
+| :---    |
+
+|[airline](https://github.com/vim-airline/vim-airline)|
 - [ale](https://github.com/dense-analysis/ale)
 - [animate](https://github.com/camspiers/animate.vim)
 - [better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
