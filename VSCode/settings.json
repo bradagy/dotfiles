@@ -1,0 +1,57 @@
+{
+  "vim.vimrc.enable": true,
+  "editor.lineNumbers": "relative",
+
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": { "path": "C:\\Program Files\\Git\\bin\\bash.exe" }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  "workbench.colorCustomizations": {
+    "bookmarks.lineBackground": "#14537e",
+    "editorRuler.foreground": "#89CFF0"
+  },
+
+  "editor.bracketPairColorization.enabled": true,
+  "editor.autoClosingBrackets": "never",
+
+  "material-icon-theme.folders.theme": "specific",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Fira Code",
+  "editor.formatOnPaste": true,
+  "editor.cursorBlinking": "phase",
+  "editor.formatOnType": true,
+  "editor.columnSelection": false,
+  "workbench.colorTheme": "Nord",
+  "editor.fontSize": 15,
+  "security.workspace.trust.untrustedFiles": "open",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "emmet.triggerExpansionOnTab": true,
+  "settingsSync.keybindingsPerPlatform": false,
+  "settingsSync.ignoredExtensions": [],
+  "sync.gist": "ef816215e1f86204bf33f94db084504c",
+  "[git-commit]": {
+    "editor.rulers": [50],
+    "workbench.editor.restoreViewState": false
+  },
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.rulers": [79, 100]
+  },
+  "python.terminal.activateEnvironment": false,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.minimap.enabled": false,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "remote.SSH.remotePlatform": {
+    "salt.biotech.cdc.gov": "linux",
+    "biolinux.biotech.cdc.gov": "linux"
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "html.format.indentInnerHtml": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "prettier.tabWidth": 4
+}
