@@ -18,5 +18,5 @@ git commit -m "Updated tpm submodule to the latest version"
 `git push`
 
 # TODO
-- Add logic `setup.sh` to handle pulling changes from repo for tpm submodule
+- Add logic to `setup.sh` to handle pulling changes from repo for tpm submodule
 
