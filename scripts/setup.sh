@@ -27,7 +27,6 @@ verify_credentials() {
     fi
 }
 
-# Function to clone the dotfiles repo if it doesn't exist
 clone_repo() {
     echo -e "\n\t${BOLD}Cloning the dotfiles repository...${RESET}"
     if [ ! -d "$DOTFILES_DIR" ]; then
@@ -56,9 +55,8 @@ backup_file() {
 }
 
 create_symlink() {
-    local FILE=$1
-    SOURCE="$DOTFILES_DIR/$FILE"
-    DESTINATION="$HOME/$FILE"
+    local SOURCE=$1
+    local DESTINATION=$2
     
     if [ -L "$DESTINATION" ]; then
         echo -e "\n\t${BOLD}Removing existing symlink: $DESTINATION${RESET}"
@@ -72,13 +70,12 @@ create_symlink() {
     
     echo -e "\t${BOLD}Creating symlink: $SOURCE -> $DESTINATION${RESET}"
     if ! ln -s "$SOURCE" "$DESTINATION"; then
-        echo -e "\n\t${RED}${BOLD}Error: Failed to create symlink for $FILE. Exiting.${RESET}"
+        echo -e "\n\t${RED}${BOLD}Error: Failed to create symlink for $SOURCE. Exiting.${RESET}"
         exit 1
     fi
     sleep 1
 }
 
-# Main function to run the script
 main() {
     echo -e "\n============================"
     echo -e "    ${BOLD}Dotfiles Setup Script${RESET}"
@@ -86,7 +83,6 @@ main() {
     
     get_credentials
     
-    # Verify GitHub credentials before proceeding
     verify_credentials
     
     echo -e "\n\t${BOLD}Are you sure you want to overwrite existing dotfiles? (y/n)${RESET}"
@@ -99,8 +95,13 @@ main() {
     clone_repo
     
     for FILE in "${FILES[@]}"; do
-        create_symlink "$FILE"
+        create_symlink "$DOTFILES_DIR/$FILE" "$HOME/$FILE"
     done
+    
+    # Handle the tmux.conf separately due to its new location
+    TMUX_SOURCE="$DOTFILES_DIR/$TMUX_CONF_DIR/$TMUX_CONF_FILE"
+    TMUX_DESTINATION="$HOME/.tmux.conf"
+    create_symlink "$TMUX_SOURCE" "$TMUX_DESTINATION"
     
     echo -e "\n\t${GREEN}${BOLD}Dotfiles symlinked successfully!${RESET}\n"
 }
