@@ -19,4 +19,4 @@ git commit -m "Updated tpm submodule to the latest version"
 
 # TODO
 - Add logic to `setup.sh` to handle pulling changes from repo for tpm submodule
-
+- Add homebrew script to automate the installation of tmux, tree, git, nodejs, and nvm
