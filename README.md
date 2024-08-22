@@ -6,7 +6,8 @@ necessary repo are pulled.
 1. Navigate to the submodule directory:
 `cd /Users/vax/dotfiles/tmux/.tmux/plugins/tpm`
 2. Pull the latest changes from the submodule's remote repository:
-`git pull origin main`
+`git pull origin master` (the branch is labeled `master` instead of `main` for
+this submodule)   
 3. After updating submodule, navigate back to the root of my main repo:
 `cd ../../..`
 4. Commit the submodule update:
