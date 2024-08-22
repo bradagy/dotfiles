@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# Load configuration from an external file
 source ./dotfiles_config.sh
 
-# Define color codes
 RED='\e[31m'
 GREEN='\e[32m'
 BOLD='\e[1m'
@@ -16,7 +14,6 @@ get_credentials() {
     echo -e "\n"
 }
 
-# Function to verify GitHub credentials by checking repository access
 verify_credentials() {
     REPO_URL="https://$GITHUB_USERNAME:$GITHUB_PAT@github.com/$GITHUB_USERNAME/dotfiles.git"
     if git ls-remote "$REPO_URL" &>/dev/null; then
@@ -98,8 +95,7 @@ main() {
         create_symlink "$DOTFILES_DIR/$FILE" "$HOME/$FILE"
     done
     
-    # Handle the tmux.conf separately due to its new location
-    TMUX_SOURCE="$DOTFILES_DIR/$TMUX_CONF_DIR/$TMUX_CONF_FILE"
+    TMUX_SOURCE="$DOTFILES_DIR/tmux/$TMUX_CONF_FILE"
     TMUX_DESTINATION="$HOME/.tmux.conf"
     create_symlink "$TMUX_SOURCE" "$TMUX_DESTINATION"
     
@@ -107,3 +103,4 @@ main() {
 }
 
 main
+
