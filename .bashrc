@@ -1,3 +1,5 @@
+echo -e "\nsourcing ~/.bashrc file\n"
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -82,21 +84,14 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
     alias tmux="TERM=screen-256color-bce tmux"
-    alias updat3='updateme.py'
-    alias enterdays='enterdays.py'
-    alias envcreate='envcreate.sh'
-    alias onlymux='onlymux.sh'
-    alias activate='source venv/bin/activate'
-    alias learning='xdg-open /home/bradagy/Desktop/books/learning_python.pdf'
-
 fi
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
+alias ll='ls -aglF'
+alias la='ls -AF'
 alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
@@ -124,14 +119,17 @@ if ! shopt -oq posix; then
 fi
 
 # FZF Configurations.
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 # Regex matching. Find any file that ends in a certain extension.
-export FZF_DEFAULT_OPS="--extended"
+# export FZF_DEFAULT_OPS="--extended"
 # Ignores file specified by gitignore
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+# export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+#
+eval "$(fzf --bash)"
 
-LS_COLORS=$LS_COLORS:'di=0;40:' ; export LS_COLORS
+# LS_COLORS=$LS_COLORS:'di=01;37;40:' ; export LS_COLORS
 
   export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
