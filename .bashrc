@@ -124,7 +124,7 @@ fi
 # export FZF_DEFAULT_OPS="--extended"
 # Ignores file specified by gitignore
 # export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-#
+
 eval "$(fzf --bash)"
 
 
