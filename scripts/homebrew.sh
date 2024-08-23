@@ -28,4 +28,8 @@ echo "Installing Tree..."
 brew install tree
 pause
 
+echo "fzf"
+brew install fzf
+pause
+
 echo "All requested packages have been installed!"
