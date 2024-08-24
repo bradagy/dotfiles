@@ -1,35 +1,29 @@
 #!/bin/bash
 
+RED='\e[31m'
+GREEN='\e[32m'
+BOLD='\e[1m'
+RESET='\e[0m'
+
 pause() {
     sleep 2
 }
 
-echo "Updating Homebrew..."
+install_package() {
+    local package=$1
+    echo -e "\n\t${BOLD}Installing $package...${RESET}"
+    brew install "$package"
+    pause
+}
+
+echo -e "\n${BOLD}Updating Homebrew...${RESET}"
 brew update
 pause
 
-echo "Installing Git..."
-brew install git
-pause
+packages=("git" "node" "nvm" "tmux" "tree" "fzf")
 
-echo "Installing Node.js..."
-brew install node
-pause
+for package in "${packages[@]}"; do
+    install_package "$package"
+done
 
-echo "Installing NVM..."
-brew install nvm
-pause
-
-echo "Installing Tmux..."
-brew install tmux
-pause
-
-echo "Installing Tree..."
-brew install tree
-pause
-
-echo "fzf"
-brew install fzf
-pause
-
-echo "All requested packages have been installed!"
+echo -e "\n${GREEN}${BOLD}All requested packages have been installed!${RESET}\n"
