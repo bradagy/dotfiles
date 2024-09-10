@@ -3,23 +3,19 @@ My dotfiles repo includes a submodule. In order to have everything working
 properly, follow the steps below to ensure that the latest updates for the
 necessary repo are pulled.
 
-## Homebrew
-Run the `homebrew.sh` script to install all of the necessary packages.
-
-## Submodules
-1. Navigate to the submodule directory:
-`cd /Users/<username>/dotfiles/tmux/.tmux/plugins/tpm`
-2. Pull the latest changes from the submodule's remote repository:
-`git pull origin master` (the branch is labeled `master` instead of `main` for
-this submodule)   
-3. After updating submodule, navigate back to the root of the main repo:
+1. Run the `homebrew.sh` script to install all of the necessary packages.
+2. Navigate to the submodule directory:
+`cd /Users/<username>/dotfiles/tmux/.tmux/pllugins/tpm`
+3. Pull the latest changes from the submodule's remote repository:
+`git pull origin master` (the branch is labeled `master` instead of `main` for this submodule)
+4. After updating the submodule, navigate back to the root of the main repo:
 `cd ../../..`
-4. Commit the submodule update:
+5. Commit the submodule update:
 ```
-git add tmux/plugins/tpm
+git add tmux plugins/tpm
 git commit -m "Updated tpm submodule to the latest version"
 ```
-5. Push the changes:
+6. Push the changes:
 `git push`
 
 # TODO
