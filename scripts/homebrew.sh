@@ -20,7 +20,7 @@ echo -e "\n${BOLD}Updating Homebrew...${RESET}"
 brew update
 pause
 
-packages=("git" "node" "nvm" "tmux" "tree" "fzf" "htop" "python")
+packages=("git" "node" "nvm" "tmux" "tree" "btop" "python")
 
 for package in "${packages[@]}"; do
     install_package "$package"
