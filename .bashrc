@@ -118,16 +118,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# FZF Configurations.
-# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-# Regex matching. Find any file that ends in a certain extension.
-# export FZF_DEFAULT_OPS="--extended"
-# Ignores file specified by gitignore
-# export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-eval "$(fzf --bash)"
-
-
   export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
