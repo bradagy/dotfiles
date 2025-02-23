@@ -4,6 +4,10 @@ properly, follow the steps below to ensure that the latest updates for the
 necessary repo are pulled.
 
 1. Run the `homebrew.sh` script to install all of the necessary packages.
+    - If extra packages need to be installed, run the script with the package
+      name behind it. For example: `./homebrew.sh wget curl` will install wget
+      and curl
+    - The default packages that will always be installed are git, node, nvm, tmux, tree, btop, and python.
 2. Navigate to the submodule directory:
 `cd /Users/<username>/dotfiles/tmux/.tmux/plugins/tpm`
 3. Pull the latest changes from the submodule's remote repository:
